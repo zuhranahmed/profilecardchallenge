@@ -1,0 +1,153 @@
+/* Variables */
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --verydark-blue: hsl(229, 23%, 23%);
+  --darkgrayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+/* Basic Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.6rem;
+  color: var(--verydark-blue);
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+
+/* Container */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--dark-cyan);
+  position: relative;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 1.5rem;
+  margin-bottom: 20px;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.person {
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 10rem;
+}
+
+.bg-pattern {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+/* Personal */
+.personal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 3rem;
+  transform: translateY(-50%);
+}
+
+.personal div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+.personal div .name {
+  margin-right: 5px;
+  font-weight: 700;
+}
+.personal div .age {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--dark-gray);
+}
+
+.personal .city {
+  color: var(--dark-gray);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* Stats */
+
+.stats {
+  display: grid;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem 1rem;
+  border-top: 1px solid var(--dark-gray);
+}
+
+.stat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.num {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.att {
+  font-size: 1.4rem;
+  color: var(--dark-gray);
+}
+
+/* Backgrounds */
+
+.bg-top {
+  position: absolute;
+  top: -35%;
+  left: -5%;
+}
+.bg-bottom {
+  position: absolute;
+  bottom: -35%;
+  right: -5%;
+}
+
+/* Attribute */
+
+.attribute {
+  font-size: 1.4rem;
+}
